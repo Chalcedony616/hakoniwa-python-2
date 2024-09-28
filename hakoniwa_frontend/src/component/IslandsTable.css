@@ -1,0 +1,44 @@
+.islands-table-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px; /* テーブル上部の余白 */
+}
+
+
+.islands-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-left: 20px;
+}
+
+.islands-table th, .islands-table td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: left;
+}
+
+.islands-table th {
+    background-color: #f9f9f9;
+    font-weight: bold;
+}
+
+.prizes {
+    margin-top: 5px;
+}
+
+.prize-image {
+    width: 16px;
+    height: 16px;
+    margin-right: 5px;
+}
+
+.absent-link {
+    color: gray; /* 放置されている島のリンクの色をグレーに */
+    text-decoration: none;
+}
+
+.active-link {
+    color: #a06040; /* 任意の色に設定 */
+    text-decoration: none; /* 必要に応じてスタイルを調整 */
+    font-weight: bold;
+}

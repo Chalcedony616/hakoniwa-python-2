@@ -1,0 +1,31 @@
+/* TurnInfoコンポーネント全体のスタイル */
+.turn-info-container {
+    background-color: #f0f8ff; /* 背景色を柔らかいブルーに設定 */
+    border: 1px solid #ccc; /* グレーのボーダーを追加 */
+    border-radius: 10px; /* 角を丸める */
+    padding: 20px; /* コンテンツ周りの余白を増やす */
+    margin-bottom: 20px; /* コンポーネント下部の余白 */
+    text-align: center; /* テキストを中央揃えに */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* 軽いシャドウを追加 */
+}
+
+/* タイトルのスタイル */
+.turn-info-container h2 {
+    font-size: 30px; /* フォントサイズを大きくする */
+    color: DodgerBlue; /* ダークグレーのテキストカラー */
+    margin-bottom: 15px; /* タイトル下部の余白 */
+}
+
+/* ターン数、最終更新時刻、次回更新時刻のスタイル */
+.turn-info-container p {
+    font-size: 14px; /* フォントサイズをやや大きく */
+    color: #555; /* ミディアムグレーのテキストカラー */
+    margin: 10px 0; /* 上下に余白を追加 */
+}
+
+/* 次回更新までのカウントダウンのスタイル */
+.turn-info-container .time-remaining {
+    font-size: 20px; /* フォントサイズを大きめに */
+    color: LightCoral; /* 赤系のカラーで強調 */
+    font-weight: bold; /* 太字に */
+}

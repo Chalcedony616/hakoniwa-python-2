@@ -1,0 +1,197 @@
+.development-view {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+}
+
+.layout-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.command-input-container,
+.map-container,
+.command-list {
+    margin: 10px;
+}
+
+.map-and-commands {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.command-input-container {
+    width: 300px;
+}
+
+.command-list {
+    width: auto;
+}
+
+.command-list ul {
+    list-style-type: none;
+    padding: 0;
+    padding-left: 0;
+}
+
+.command-list li {
+    cursor: pointer;
+    padding: 5px 0;
+    text-align: left;
+}
+
+.command-list li:hover {
+    background-color: #eaeaea;
+}
+
+button {
+    width: 100%;
+}
+
+hr {
+    margin: 15px 0;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+.button-group {
+    display: flex;
+    justify-content: space-between;
+}
+
+.button-group button {
+    width: auto; /* ボタンを小さく保つ */
+    padding: 10px;
+    margin: 0 5px;
+    flex-grow: 1;
+}
+
+.command-move-group {
+    display: flex;
+    justify-content: space-between;
+}
+
+.command-move-group button {
+    width: 45%;
+    padding: 10px;
+}
+
+.back-button {
+    width: 400px;
+    margin: 0 auto;
+    display: block;
+}
+
+.command-expend {
+    color: chocolate;
+}
+
+.command-non-expend {
+    color: dodgerblue;
+}
+
+.selected {
+    background-color: #d0ebff; /* ハイライトの背景色を指定 */
+}
+
+.status-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.status-table th, .status-table td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: left;
+}
+
+.status-table th {
+    background-color: #f9f9f9;
+    font-weight: bold;
+}
+
+button:disabled {
+    opacity: 0.5;
+    pointer-events: none;
+}
+
+.command-list.is-editing {
+    background-color: #ffebcd;
+}
+
+.popup-menu {
+    position: absolute;
+    background-color: cornsilk;
+    border: 1px solid #ccc;
+    padding: 10px;
+    z-index: 1000;
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+.popup-menu div {
+    padding: 5px;
+    cursor: pointer;
+}
+
+.popup-menu div:hover {
+    background-color: #f0f0f0;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 300px; /* 全体の最大幅を指定 */
+}
+
+.form-container label {
+    display: inline-block;
+    width: 70px; /* ラベルの幅を揃える */
+    text-align: right; /* ラベルを右寄せにする */
+    margin-right: 10px;
+}
+
+.form-group {
+    display: flex;
+    align-items: center;
+}
+
+.form-container input[type="text"],
+.form-container textarea {
+    flex: 1;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.form-container textarea {
+    width: 100%; /* コメント欄の横幅を広げる */
+    height: 80px; /* コメント欄の高さ */
+    resize: vertical; /* 縦方向のみリサイズ可能にする */
+}
+
+.save-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50; /* ボタンの色を調整 */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.save-button:disabled {
+    background-color: #cccccc; /* 無効化されたときのボタンの色 */
+    cursor: not-allowed;
+}

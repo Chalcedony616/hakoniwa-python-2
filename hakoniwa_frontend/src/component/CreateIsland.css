@@ -1,0 +1,68 @@
+.create-island-container {
+    max-width: 400px;  /* 幅を500pxに設定 */
+    width: 100%; 
+    margin: 0 auto;
+    padding: 30px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.create-island-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    display: flex;  /* ラベルとインプットを横並びに */
+    justify-content: space-between;  /* ラベルとインプットの間隔を調整 */
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    flex-basis: 30%;  /* ラベルの幅を統一 */
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-size: 14px;
+    text-align: right;  /* ラベルを右揃えに */
+    padding-right: 10px;  /* ラベルとインプットの間に余白 */
+}
+
+.form-group input {
+    flex-basis: 70%;  /* 入力フィールドをラベルの横に配置 */
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+button {
+    padding: 12px 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 4px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    width: 100%;  /* ボタンの幅を全体に */
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.error, .success {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.error {
+    color: red;
+}
+
+.success {
+    color: green;
+}

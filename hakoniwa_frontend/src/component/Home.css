@@ -1,0 +1,31 @@
+.header-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+  
+.header-title {
+    margin-right: auto;
+}
+  
+.header-links {
+    display: flex;
+    gap: 20px;
+    margin-left: auto;
+}
+  
+.islands-table-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+  
+.islands-table {
+    width: 100%;
+    max-width: 1000px;
+    margin-left: 20px;
+}
+  

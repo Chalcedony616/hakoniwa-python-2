@@ -1,0 +1,71 @@
+html, body {
+  height: 100%; /* ウィンドウ全体の高さを確保 */
+  margin: 0; /* 余白をゼロに設定 */
+  background-color: AliceBlue; /* ウィンドウ全体に背景色を適用 */
+}
+
+.App {
+  min-height: 100vh; /* 画面の高さ全体をカバー */
+  display: flex;
+  flex-direction: column;
+  background-color: AliceBlue; /* ウィンドウ全体に背景色を適用 */
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  height: auto;
+  padding: 10px 20px;  /* 左右の余白を設定 */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;  /* 左右に要素を配置 */
+  font-size: 1.2rem;
+  color: white;
+}
+
+.header-title {
+  margin: 0;
+  padding: 0;
+}
+
+.header-links {
+  display: flex;
+  gap: 20px;  /* リンク間の余白を設定 */
+}
+
+.header-links a {
+  color: #61dafb; /* 未訪問リンクの色 */
+  text-decoration: none;
+}
+
+.header-links a:visited {
+  color: #b3e5fc; /* 訪問済みリンクの色 */
+}
+
+.header-links a:hover {
+  color: #ffffff; /* ホバー時の色 */
+  text-decoration: underline;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

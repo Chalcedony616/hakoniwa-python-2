@@ -1,0 +1,52 @@
+.island-view {
+    text-align: center;
+    background-color: AliceBlue; /* 背景色を追加 */
+    padding: 20px;
+}
+
+.island-view h1 {
+    background-color: AliceBlue; /* 背景色を追加 */
+    padding: 10px 0; /* 上下の余白を調整 */
+}
+
+.island-view-failed {
+    text-align: center;
+}
+
+.status-table {
+    margin: 20px auto;
+    border-collapse: collapse;
+    max-width: 800px; /* テーブルの最大幅を設定 */
+    padding: 0 20px; /* 左右に余白を追加 */
+}
+
+.status-table th, .status-table td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: center;
+}
+
+.tooltip {
+    position: absolute;
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 5px;
+    display: none;
+    pointer-events: none;
+    z-index: 10;
+}
+
+.back-button {
+    width: 400px; /* ボタン幅を400pxに固定 */
+    padding: 10px;
+    background-color: #1E90FF; /* 背景色を設定 */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 20px; /* ボタンの下に余白を追加 */
+}
+
+.back-button:hover {
+    background-color: #1C86EE; /* ホバー時の色を変更 */
+}
